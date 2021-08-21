@@ -1,12 +1,12 @@
 #full_landing {
   display: flex;
   flex-direction: column;
-  background-color: black;
+  background-color: white;
 
   .header {
     display: flex;
     padding-top: 3vh;
-    padding-bottom: 13vh;
+    padding-bottom: 10vh;
   }
   .mode {
     display: flex;
@@ -27,7 +27,7 @@
       }
     }
   }
-  .landing_text {
+  .welcome_text {
     display: flex;
     margin: auto;
     font-size: 4rem;

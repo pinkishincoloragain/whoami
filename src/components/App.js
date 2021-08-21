@@ -1,8 +1,8 @@
-import "./styles/App.css";
+import "styles/App.css";
 import React from "react";
 import firebase from "firebase";
-import Window from "./components/Window";
-import Landing from "./views/Landing";
+import Window from "components/Window";
+import Landing from "views/Landing";
 
 // const firebaseConfig = {
 //   apiKey: "AIzaSyD5RgFIHakgCeDH6an2pbNHczcdtc3Ofos",

@@ -6,7 +6,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: black;
+  background-color: white;
 }
 
 #full_landing .header {
@@ -14,7 +14,7 @@
   display: -ms-flexbox;
   display: flex;
   padding-top: 3vh;
-  padding-bottom: 13vh;
+  padding-bottom: 10vh;
 }
 
 #full_landing .mode {
@@ -42,7 +42,7 @@
   background-color: #ffd400;
 }
 
-#full_landing .landing_text {
+#full_landing .welcome_text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
