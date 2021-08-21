@@ -17,6 +17,13 @@
   padding-bottom: 10vh;
 }
 
+#full_landing .header .Link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
 #full_landing .mode {
   display: -webkit-box;
   display: -ms-flexbox;

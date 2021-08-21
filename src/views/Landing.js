@@ -11,15 +11,17 @@ import "styles/Landing.css";
 function Landing() {
   return (
     <div id="full_landing">
-      <div className="mode">
-        <button className="mode_button"></button>
-      </div>
-      <div className="header">
-        <div className="welcome_text">
-          <b>Welcome!</b>
-        </div>
-      </div>
       <Router>
+        <div className="mode">
+          <button className="mode_button"></button>
+        </div>
+        <div className="header">
+          <Link className="link" to="/home">
+            <div className="welcome_text">
+              <b>Welcome!</b>
+            </div>
+          </Link>
+        </div>
         <div className="landing_photos">
           <div className="panel">
             <Link to="/about">
@@ -48,6 +50,10 @@ function Landing() {
         <div className="blog">
           <div>Blog</div>
         </div>
+        {/* <Route exact path="/home" component={Landing} /> */}
+        <Route exact path="/about" component={About} />
+        <Route exact path="/interest" component={Interest} />
+        <Route exact path="/developer" component={Developer} />
       </Router>
     </div>
   );
