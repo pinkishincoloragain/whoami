@@ -1,3 +1,7 @@
 import React from "react";
 
-export default () => <span>About</span>;
+function About() {
+  return <div>About</div>;
+}
+
+export default About;
