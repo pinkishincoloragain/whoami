@@ -1,3 +1,11 @@
 import React from "react";
+import Window from "components/Window";
 
-export default () => <span>Developer</span>;
+function Developer() {
+  return (
+    <>
+      <Window />
+    </>
+  );
+}
+export default Developer;

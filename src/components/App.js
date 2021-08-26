@@ -1,7 +1,9 @@
 import "styles/App.css";
 import React from "react";
 import firebase from "firebase";
-import Window from "components/Window";
+import Routes from "./Routes";
+import "styles/Landing.css";
+import { Link, BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Landing from "views/Landing";
 
 // const firebaseConfig = {
@@ -20,9 +22,9 @@ import Landing from "views/Landing";
 
 function App() {
   return (
-    <div>
-      <Landing />
-    </div>
+    <>
+      <Routes></Routes>
+    </>
   );
 }
 
