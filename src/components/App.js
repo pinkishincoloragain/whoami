@@ -23,7 +23,7 @@ import Landing from "views/Landing";
 function App() {
   return (
     <>
-      <Routes></Routes>
+      <Routes />
     </>
   );
 }

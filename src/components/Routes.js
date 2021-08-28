@@ -8,10 +8,10 @@ import { Link, BrowserRouter as Router, Route, Switch } from "react-router-dom";
 function Routes() {
   return (
     <Router>
-      <Route exact path="/" render={() => <Landing />} />
-      <Route exact path="/about" render={() => <About />} />
-      <Route exact path="/interest" render={() => <Interest />} />
-      <Route exact path="/developer" render={() => <Developer />} />
+      <Route exact path="/" component={Landing} />
+      <Route exact path="/about" component={About} />
+      <Route exact path="/interest" component={Interest} />
+      <Route exact path="/developer" component={Developer} />
       <Route component={NotFound} />
     </Router>
   );

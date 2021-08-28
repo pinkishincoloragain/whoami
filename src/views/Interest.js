@@ -1,3 +1,6 @@
 import React from "react";
 
-export default () => <span>Interest</span>;
+function Interest() {
+  return <div>Interest</div>;
+}
+export default Interest;
