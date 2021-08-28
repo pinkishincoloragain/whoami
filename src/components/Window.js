@@ -2,8 +2,8 @@ import Draggable from "react-draggable";
 import folder_logo from "../assets/folder.jpg";
 import React, { useRef, useState } from "react";
 import Command from "./commands/Command";
-import "styles/App.css";
-import "styles/App.css";
+import "styles/App.scss";
+import "styles/Window.scss";
 
 function Window() {
   const [size, setSize] = useState(true);

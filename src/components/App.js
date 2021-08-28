@@ -1,10 +1,7 @@
-import "styles/App.css";
+import "styles/App.scss";
 import React from "react";
 import firebase from "firebase";
 import Routes from "./Routes";
-import "styles/Landing.css";
-import { Link, BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Landing from "views/Landing";
 
 // const firebaseConfig = {
 //   apiKey: "AIzaSyD5RgFIHakgCeDH6an2pbNHczcdtc3Ofos",

@@ -1,3 +1,11 @@
 import React from "react";
 
-export default () => <span>Not found</span>;
+function NotFound() {
+  return (
+    <div>
+      <div>No 허튼짓.</div>
+    </div>
+  );
+}
+
+export default NotFound;

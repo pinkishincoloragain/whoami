@@ -1,13 +1,9 @@
 import React from "react";
-import { Link, BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Link } from "react-router-dom";
 import about from "assets/about.png";
 import developer from "assets/developer.png";
 import interest from "assets/interest.png";
-import About from "views/About";
-import Interest from "views/Interest";
-import Developer from "views/Developer";
-import NotFound from "views/NotFound";
-import "styles/Landing.css";
+import "styles/Landing.scss";
 
 function Landing() {
   return (

@@ -8,11 +8,13 @@ import { Link, BrowserRouter as Router, Route, Switch } from "react-router-dom";
 function Routes() {
   return (
     <Router>
-      <Route exact path="/" component={Landing} />
-      <Route exact path="/about" component={About} />
-      <Route exact path="/interest" component={Interest} />
-      <Route exact path="/developer" component={Developer} />
-      <Route component={NotFound} />
+      <Switch>
+        <Route exact path="/" component={Landing} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/interest" component={Interest} />
+        <Route exact path="/developer" component={Developer} />
+        <Route path="*" component={NotFound} />
+      </Switch>
     </Router>
   );
 }
