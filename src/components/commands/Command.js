@@ -4,7 +4,7 @@ import "styles/Command.scss";
 function Command() {
   return (
     <div>
-      <div className="terminal_line">&gt; Not available now.</div>
+      <div className="terminal_line">&gt; Developer mode</div>
     </div>
   );
 }
