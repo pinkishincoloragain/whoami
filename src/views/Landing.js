@@ -4,7 +4,6 @@ import about from "assets/about.png";
 import developer from "assets/developer.png";
 import interest from "assets/interest.png";
 import "styles/Landing.scss";
-import fish from "assets/fish.svg";
 
 function Landing() {
   const [bkgColor, setBkgColor] = useState("black");
@@ -22,6 +21,7 @@ function Landing() {
 
   return (
     <div id="full_landing" style={{ backgroundColor: bkgColor }}>
+      <div className="floating_letters">pinkishincoloragain</div>
       <div className="mode">
         {btnColor ? (
           <button
@@ -39,7 +39,6 @@ function Landing() {
         <Link className="link" to="/home">
           <div className="welcome_text">
             <b>Welcome!</b>
-            <img src={fish} className="fish"></img>
           </div>
         </Link>
       </div>
