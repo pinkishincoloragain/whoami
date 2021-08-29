@@ -1,20 +1,45 @@
-import React from "react";
+import { React, useState } from "react";
 import { Link } from "react-router-dom";
 import about from "assets/about.png";
 import developer from "assets/developer.png";
 import interest from "assets/interest.png";
 import "styles/Landing.scss";
+import fish from "assets/fish.svg";
 
 function Landing() {
+  const [bkgColor, setBkgColor] = useState("black");
+  const [btnColor, setBtnColor] = useState(true);
+
+  function handleClick(e) {
+    e.preventDefault();
+    setBtnColor(!btnColor);
+    if (bkgColor == "black") {
+      setBkgColor("white");
+    } else {
+      setBkgColor("black");
+    }
+  }
+
   return (
-    <div id="full_landing">
+    <div id="full_landing" style={{ backgroundColor: bkgColor }}>
       <div className="mode">
-        <button className="mode_button"></button>
+        {btnColor ? (
+          <button
+            className="mode_button"
+            onClick={handleClick}
+            style={{ backgroundColor: "white" }}></button>
+        ) : (
+          <button
+            className="mode_button"
+            onClick={handleClick}
+            style={{ backgroundColor: "black" }}></button>
+        )}
       </div>
       <div className="header">
         <Link className="link" to="/home">
           <div className="welcome_text">
             <b>Welcome!</b>
+            <img src={fish} className="fish"></img>
           </div>
         </Link>
       </div>

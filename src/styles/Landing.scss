@@ -3,6 +3,19 @@
   flex-direction: column;
   background-color: white;
 
+  #fish {
+    stroke-dasharray: 242;
+    stroke-dashoffset: 242;
+    animation: draw 4s ease;
+    animation-fill-mode: forwards;
+
+    @keyframes draw {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+  }
+
   .header {
     display: flex;
     padding-top: 3vh;
@@ -26,7 +39,7 @@
       height: 2vh;
       border: 0;
       border-radius: 2vw;
-      background-color: black;
+      background-color: rgb(85, 83, 83);
       // padding-right: 30px;
       &:hover {
         background-color: #ffd400;
@@ -37,6 +50,7 @@
     display: flex;
     margin: auto;
     font-size: 4rem;
+    color: black;
   }
 
   .landing_photos {
@@ -50,6 +64,12 @@
     img {
       max-width: 23vw;
       min-width: 20vw;
+      filter: grayscale(100%);
+      &:hover {
+        filter: grayscale(0%);
+        transition: 0.3s;
+      }
+      transition: 0.8s;
     }
 
     .panel {
