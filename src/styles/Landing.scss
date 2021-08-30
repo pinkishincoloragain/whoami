@@ -3,8 +3,10 @@
   flex-direction: column;
   background-color: white;
   transition: 0.3s;
-  // position: absolute;
+  border: 50px solid black;
+  height: 100%;
 
+  // position: absolute;
   .floating_letters {
     position: relative;
     top: 330px;
@@ -58,8 +60,9 @@
     margin-right: 12vw;
 
     img {
+      vertical-align: bottom;
       max-width: 23vw;
-      min-width: 20vw;
+      min-width: 200px;
       filter: grayscale(100%);
       &:hover {
         filter: grayscale(0%);
@@ -83,7 +86,6 @@
   .blog {
     margin: auto;
     margin-top: 10vh;
-    margin-bottom: 15vh;
     font-weight: bold;
   }
 }

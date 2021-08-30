@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import about from "assets/about.png";
 import developer from "assets/developer.png";
 import interest from "assets/interest.png";
-import "styles/Landing.scss";
+import "styles/Landing_full.scss";
 
 function Landing() {
   const [bkgColor, setBkgColor] = useState("black");
@@ -21,7 +21,7 @@ function Landing() {
 
   return (
     <div id="full_landing" style={{ backgroundColor: bkgColor }}>
-      <div className="floating_letters">pinkishincoloragain</div>
+      {/* <div className="floating_letters">pinkishincoloragain</div> */}
       <div className="mode">
         {btnColor ? (
           <button
@@ -48,7 +48,7 @@ function Landing() {
             <img id="photo1" src={about} alt="about"></img>
           </Link>
           <div className="photo_descript">
-            <p>About</p>
+            <div>About</div>
           </div>
         </div>
 
@@ -57,7 +57,7 @@ function Landing() {
             <img id="photo2" src={interest} alt="interest"></img>
           </Link>
           <div className="photo_descript">
-            <p>Interested in pinkishincoloragain</p>
+            <div>Interested in pinkishincoloragain</div>
           </div>
         </div>
         <div className="panel">

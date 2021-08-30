@@ -1,0 +1,23 @@
+/*
+##Device = Desktops
+##Screen = 1281px to higher resolution desktops
+##Device = 데스크탑
+##Screen = 1281px 이상 해상도 데스크탑
+*/
+
+@media (min-width: 1025px) {
+  @import "styles/Landing.scss";
+}
+
+/*
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+##Device = 랩탑, 데스크탑
+##Screen = 1025px에서 1280px 사이
+*/
+/*
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+##Device = 대부분의 스마트폰 모바일 기기(세로)
+##Screen = 320px에서 479px 사이
+*/
