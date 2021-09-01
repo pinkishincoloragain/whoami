@@ -19,7 +19,7 @@ import Routes from "./Routes";
 
 function App() {
   return (
-    <div className="body">
+    <div className="App">
       <Routes />
     </div>
   );
