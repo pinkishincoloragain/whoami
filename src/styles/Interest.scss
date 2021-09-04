@@ -20,12 +20,13 @@
     font-size: 4rem;
     margin: 3rem;
     text-align: center;
+    color: white;
 
     &:focus {
       outline: none;
       caret-color: beige;
       &:placeholder-shown {
-        color: transparent;
+        color: white;
       }
     }
     &::placeholder {
@@ -35,7 +36,7 @@
   }
 
   .submitBtn {
-    border: solid black 0px;
+    border: solid black 10px;
     background-color: black;
     font-size: 3rem;
     color: white;
