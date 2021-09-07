@@ -12,7 +12,7 @@ function Landing() {
   function handleClick(e) {
     e.preventDefault();
     setBtnColor(!btnColor);
-    if (bkgColor == "black") {
+    if (bkgColor === "black") {
       setBkgColor("white");
     } else {
       setBkgColor("black");

@@ -4,6 +4,11 @@ import ShowLetter from "views/showLetter";
 
 function Interest() {
   const [verified, setVerified] = useState(false);
+  const [userID, setUserID] = useState(false);
+
+  const checkUser = (e) => {
+    
+  }
   return (
     <div className="recipient">
       {verified ? (
@@ -11,12 +16,16 @@ function Interest() {
       ) : (
         <div>
           Instagram ID :
-          <form className="inputForm">
+          <form className="inputForm" onSubmit={(e)=>{
+            e.preventDefault();
+            const data = new FormData(e.target); 
+            setUserID(data.get(userID))
+          }}>
             <input
               autoFocus="true"
               className="inputText"
               type="text"
-              name="name"
+              name="userID"
             />
             <input className="submitBtn" type="submit" value="Submit" />
           </form>
