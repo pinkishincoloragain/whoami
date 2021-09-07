@@ -1,7 +1,7 @@
 import firebase from 'firebase/compat/app';
 import "firebase/analytics";
 import "firebase/firestore";
-
+import { getDatabase } from "firebase/database";
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_API_KEY,
@@ -15,3 +15,12 @@ const firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig);
+
+export default function getQuestion(user){
+  firebase.firestore().collection("users")
+  .doc("question").get().then(doc=>{
+    return <div>
+      doc.data().question
+    </div>;
+  })
+} 
