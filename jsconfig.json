@@ -2,5 +2,10 @@
   "compilerOptions": {
     "baseUrl": "src"
   },
-  "includes": ["src"]
+  "includes": ["src"],
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
 }

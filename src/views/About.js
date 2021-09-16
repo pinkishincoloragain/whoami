@@ -1,7 +1,8 @@
 import React from "react";
+import Firestore from "components/Firestore";
 
 function About() {
-  return <div>About</div>;
+  return <div><Firestore/></div>;
 }
 
 export default About;
