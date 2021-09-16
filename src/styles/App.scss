@@ -1,7 +1,9 @@
 .App {
-  height: 100%;
   margin: 0px;
   padding: 0px;
-  border: 10px solid black;
   overflow: auto;
+  // border: 10px solid #000000;
+  height:100%;
+  width:100%;
+  border-radius: 10px;
 }

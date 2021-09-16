@@ -17,7 +17,7 @@ function Interest() {
   function GetData() {
     return (
       <div>
-        Instagram ID :
+        <div className="input_label">Instagram ID :</div>
         <form
           className="inputForm"
           onSubmit={(e) => {
@@ -37,7 +37,9 @@ function Interest() {
       {verified ? (
         <ShowLetter />
       ) : (
-        <div>{userID ? <Read key={userID} userID={userID}/> : <GetData />}</div>
+        <div>
+          {userID ? <Read key={userID} userID={userID} /> : <GetData />}
+        </div>
       )}
     </div>
   );
