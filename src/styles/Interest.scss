@@ -46,4 +46,29 @@
       cursor:auto;
     }
   }
+
+}
+
+.full_letter{
+  display:flex;
+  flex-direction: row;
+  margin: auto;
+  text-align: center;
+
+  .letter_area{
+    display:flex;
+    font-size:3rem;
+    margin:1vh;
+
+    .id_box{
+      display:flex;
+      text-align: center;
+      border-radius: 1rem;
+      margin-bottom: 10vh;
+      font-size: 4rem;
+    }
+    .letter_box{
+
+    }
+  }
 }

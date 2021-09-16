@@ -1,6 +1,7 @@
 // Import Firestore database
 import db from 'firebase.js';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import "styles/Interest.scss";
   
 const Read = () => {
   
@@ -8,9 +9,9 @@ const Read = () => {
   
     // Start the fetch operation as soon as
     // the page loads
-    window.addEventListener('load', () => {
+    useEffect(() => {
         Fetchdata();
-      });
+      },[]);
   
     // Fetch the required data using the get() method
     const Fetchdata = ()=>{
@@ -23,35 +24,35 @@ const Read = () => {
                 setInfo(arr => [...arr , data]);
                   
             });
+        
         })
     }
       
     // Display the result on the page
     return (
-        <div>
+        <div className = "full_letter">
             <div>
-            <h2>Student Details</h2>
             </div>
-        {
-            info.map((data) => (
-            <Frame course={data.CourseEnrolled} 
-                   name={data.Nane} 
-                   age={data.Age}/>
-            ))
-        }
+            {
+                info.map((data) => (
+                <Frame id={data.ID} 
+                    q={data.Q} 
+                    letter={data.Letter}/>
+                ))
+            }
         </div>
-  
     );
 }
   
 // Define how each display entry will be structured
-const Frame = ({course , name , age}) => {
-    console.log(course + " " + name + " " + age);
+const Frame = ({id , letter , q}) => {
+    console.log(id + " " + letter + " " + q);
     return (
-        <div>
-            <div className="div">
-                <p>NAME : {name}</p><p>Age : {age}</p>
-                <p>Course : {course}</p>
+        <div className="letter_area">
+            <div>
+                <div className="id_box">{id}</div>
+                <div className="question_box">{q}</div>
+                <div className="letter_box">{letter}</div>
             </div>
         </div>
     );
