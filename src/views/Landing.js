@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import about from "assets/about.png";
 import developer from "assets/developer.png";
 import interest from "assets/interest.png";
-import "styles/Landing_full.scss";
+import "styles/Landing.scss";
 
 function Landing() {
   const [bkgColor, setBkgColor] = useState("black");
@@ -66,9 +66,6 @@ function Landing() {
           </Link>
           <div className="photo_descript">Developer mode</div>
         </div>
-      </div>
-      <div className="blog">
-        <div>Blog</div>
       </div>
       {/* <Switch>
           <Route exact path="/about" render={() => <About />} />

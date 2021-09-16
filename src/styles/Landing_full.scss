@@ -4,10 +4,9 @@
 ##Device = 데스크탑
 ##Screen = 1281px 이상 해상도 데스크탑
 */
+@import "styles/Landing.scss";
 
-@media (min-width: 1025px) {
-  @import "styles/Landing.scss";
-}
+
 
 /*
 ##Device = Laptops, Desktops

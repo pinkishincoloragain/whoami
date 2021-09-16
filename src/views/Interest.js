@@ -37,7 +37,7 @@ function Interest() {
       {verified ? (
         <ShowLetter />
       ) : (
-        <div>{userID ? <Read /> : <GetData />}</div>
+        <div>{userID ? <Read key={userID} userID={userID}/> : <GetData />}</div>
       )}
     </div>
   );

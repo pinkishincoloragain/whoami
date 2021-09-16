@@ -3,7 +3,7 @@ import db from 'firebase.js';
 import { useEffect, useState } from 'react';
 import "styles/Interest.scss";
   
-const Read = () => {
+const Read = ({userID}) => {
   
     const [info , setInfo] = useState([]);
   
@@ -15,17 +15,18 @@ const Read = () => {
   
     // Fetch the required data using the get() method
     const Fetchdata = ()=>{
-        db.collection("data").get().then((querySnapshot) => {
-             
-            // Loop through the data and store
-            // it in array to display
-            querySnapshot.forEach(element => {
-                var data = element.data();
+        console.log("{userID} => " + userID )
+        db.collection("data").where("ID" ,"==",userID).get().then((querySnapshot) => {
+            querySnapshot.forEach((doc) => {
+                // doc.data() is never undefined for query doc snapshots
+                console.log(doc.id, " => ", doc.data());
+                var data = doc.data();
                 setInfo(arr => [...arr , data]);
-                  
             });
-        
         })
+        .catch((error) => {
+            console.log("Error getting documents: ", error);
+        });
     }
       
     // Display the result on the page
@@ -35,7 +36,8 @@ const Read = () => {
             </div>
             {
                 info.map((data) => (
-                <Frame id={data.ID} 
+                <Frame key={data.ID}
+                    id={data.ID} 
                     q={data.Q} 
                     letter={data.Letter}/>
                 ))

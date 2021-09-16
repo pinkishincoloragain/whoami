@@ -1,0 +1,33 @@
+
+.input_form{
+    font-size:2rem;
+    text-align: center;
+
+    .id{
+        text-align: inherit;
+        font-size: inherit;
+        width:60vw;
+        height:10vh;
+    }
+    
+    .question{
+        text-align: inherit;
+        font-size: inherit;
+        width:80vw;
+        height:10vh;
+    }
+    
+    .answer{
+        text-align: inherit;
+        font-size: inherit;
+        width:80vw;
+        height:10vh;
+    }
+
+    .textarea{
+        width:80vw;
+        height:30vh;
+    }
+    
+
+}

@@ -20,6 +20,10 @@
     padding-top: 3vh;
     padding-bottom: 10vh;
 
+    @media (max-width: 1025px) {
+      padding-bottom: 6vh;
+    }
+
     .link {
       display: flex;
       margin: auto;
@@ -34,7 +38,7 @@
       margin: auto;
       margin-right: 50px;
       width: 2vw;
-      min-width: 30px;
+      // min-width: 30px;
       height: 2vh;
       border: 0;
       border-radius: 2vw;
@@ -44,6 +48,13 @@
         background-color: #ffd400;
       }
     }
+
+    @media (max-width: 1025px) {
+      .mode_button {
+        width: 8vw;
+      }
+    }
+
   }
   .welcome_text {
     display: flex;
@@ -61,9 +72,12 @@
     margin-right: 12vw;
 
     img {
+      display:flex;
       vertical-align: bottom;
       max-width: 23vw;
-      min-width: 200px;
+      margin-bottom: 1vh;
+
+      // min-width: 10px;
       filter: grayscale(100%);
       &:hover {
         filter: grayscale(0%);
@@ -72,6 +86,13 @@
       transition: 0.8s;
     }
 
+    @media (max-width: 1025px) {
+      img {
+        max-width: 70vw;
+      }
+    }
+
+
     .panel {
       flex-direction: column;
       display: flex;
@@ -79,14 +100,16 @@
 
     .photo_descript {
       margin: auto;
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       font-weight: bold;
+      margin-bottom: 3vh;
     }
   }
 
   .blog {
     margin: auto;
     margin-top: 10vh;
+    margin-bottom: 3vh;
     font-weight: bold;
   }
 }

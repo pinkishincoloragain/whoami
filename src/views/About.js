@@ -1,8 +1,9 @@
 import React from "react";
-import Firestore from "components/Firestore";
+import Write from "components/Write";
+import "styles/About.scss";
 
 function About() {
-  return <div><Firestore/></div>;
+  return <div><Write/></div>;
 }
 
 export default About;

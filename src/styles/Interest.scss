@@ -51,24 +51,28 @@
 
 .full_letter{
   display:flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: auto;
   text-align: center;
 
   .letter_area{
-    display:flex;
-    font-size:3rem;
     margin:1vh;
 
     .id_box{
+      font-size:3rem;
       display:flex;
+      margin:auto;
       text-align: center;
+      align-items: center;
       border-radius: 1rem;
       margin-bottom: 10vh;
       font-size: 4rem;
     }
-    .letter_box{
 
+    .letter_box{
+      width: 80vw;
+      border: 0.5rem black solid;
+      border-radius: 2rem;
     }
   }
 }
