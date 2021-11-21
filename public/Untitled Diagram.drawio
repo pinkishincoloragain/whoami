@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-11-21T19:06:24.680Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="ZzR4q7Xv9WTKH4X5ayeX" version="15.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-21T19:07:00.789Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="VFSKtkxrNL5ak30oqcSu" version="15.6.8" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
-    <mxGraphModel dx="274" dy="148" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1177" dy="637" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -69,6 +69,17 @@
             <Array as="points">
               <mxPoint x="40" y="220.05" />
               <mxPoint x="-60" y="220.05" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3-osx-DNCofoeE45nd6k-68" value="13. Tablet detected" style="verticalAlign=bottom;endArrow=block;shadow=0;strokeWidth=1;" edge="1" parent="3-osx-DNCofoeE45nd6k-23" target="3nuBFxr9cyL0pnOWT2aG-2">
+          <mxGeometry y="20" relative="1" as="geometry">
+            <mxPoint x="228" y="470" as="sourcePoint" />
+            <mxPoint x="70" y="470" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="208" y="470.05000000000007" />
+              <mxPoint x="108" y="470.05000000000007" />
             </Array>
             <mxPoint as="offset" />
           </mxGeometry>
@@ -170,7 +181,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="3-osx-DNCofoeE45nd6k-66" value="12. return tablet info" style="verticalAlign=bottom;endArrow=block;shadow=0;strokeWidth=1;" edge="1" parent="1">
+        <mxCell id="3-osx-DNCofoeE45nd6k-66" value="13. Tablet detected" style="verticalAlign=bottom;endArrow=block;shadow=0;strokeWidth=1;" edge="1" parent="1">
           <mxGeometry y="20" relative="1" as="geometry">
             <mxPoint x="1038" y="529.9999999999999" as="sourcePoint" />
             <mxPoint x="880" y="530" as="targetPoint" />
